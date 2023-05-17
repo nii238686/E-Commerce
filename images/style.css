@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 15vh;
+    background-color: whitesmoke;
+
+    box-shadow:  0px 5px 10px #888;
+}
+
+header h1{
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+header #social{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header ul li a:hover{
+    color: red;
+}
+
+header #social li:hover{
+    color: red;
+}
+
+#menu-icon{
+    font-size: 26px;
+    cursor: pointer;
+    color: #000;
+    z-index: 10001;
+    display: none; 
+}
+
+
+.container{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #e4e4e4;
+}
+
+.container .content{
+    width: 90%;
+    margin-top: 10%;
+}
+
+
+.container .content .height{
+    width: 100%;
+}
+.container .content .details h4{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.container .content .details h2{
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+.container .content  .details h1{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container .content  .details button{
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(0, 103, 193);
+    font-size: 18px;
+    color: #ffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    transition: none;
+}
+.container .content  .details button:hover{
+    color: #111;
+}
+
+@media (max-width:915px) {
+    header{
+        padding: 25px 3%;
+        transition: .3s;
+    }
+}
+
+@media(max-width:872px){
+    .details h4{
+        font-size: 32px;
+        transition: .3s;
+    }
+
+    .details h2{
+        font-size: 38px;
+        transition: .3s;
+    }
+
+    .details h1{
+        font-size: 38px;
+        transition: .3s;
+    }
+
+    .details p{
+        font-size: 16px;
+        transition: .3s;
+    }
+
+    .btn{
+        padding: 8px 20px;
+    }
+}
+
+@media(max-width:840px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: -600%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgb(0, 103, 193);
+        text-align: left;
+        transition: all .40s ease;
+        
+    }
+
+    .navbar a{
+        display: block;
+        padding: 10px;
+        margin: 5px;
+        border-left:2px solid #ffff ;
+    }
+
+    .navbar a:hover{
+        color: #ffff;
+    }
+
+    .navbar.open{
+        left: 100%;
+    }
+}
+
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+@media (max-height:800px)
+{
+    footer{
+        position: static;
+    }
+}
+.footer-all{
+        background-color: #2d2a30;
+        /* color: white; */
+        box-sizing: border-box;
+        widows: 100%;
+        text-align: left;
+        font: bold 16px;
+        padding: 50px 50px 60px 50px;
+        margin-top: 100px;
+}
+/* 
+.footer-all .footer-left, .footer-all .footer-center, .footer-all .vid
+{    display: inline-block;
+    vertical-align: top;
+} */
+/* 
+.footer-all .footer-left {
+    width: 0px;
+} */
+
+.footer-all h3{
+    color: #ffff;
+    font: normal 16px  'cookie', cursive;
+    margin: 0;
+}
+
+.footer-all h3 span{
+    color:#e0ac1c ;
+}
+
+.footer-all .footer-links {
+    color: #ffff;
+    margin: 20px 0px 12px;
+}
+
+.footer-all .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-all .footer-company-name{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-all .footer-center{
+    width: 10%;
+}
+
+.footer-all .footer-center{
+    background-color: #33383b;
+    color: #ffff;
+    font-size: 15px;
+    width: 38px;
+    height: 38px;
+    /* border-radius: 50px; */
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-all .footer-center .fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+ 
+   
+}
+
+.footer-all .footer-center p{
+    display: inline-block;
+    color: #ffff;
+    vertical-align: middle;
+    margin-top: 10px;
+
+}
+
+.footer-all .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-all .footer-center p a{
+    color: #e0ac1c;
+    text-decoration: none;
+}
+.footer-all .vid{
+    width: 30%;
+}
+
+.footer-all .footer-company-about{
+    line-height: 20px;
+    color: #929999;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 80%;
+}
+
+.footer-all .footer-company-about span{
+    display: block;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-all .footer-icons{
+    margin-top: 25px;
+
+}
+
+.footer-all .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffff;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer-all .footer-icons a:hover{
+    background-color: #3f71ea;
+}
+
+.footer-links a:hover{
+    color: #3f71ea;
+}
+
+@media(max-width:880px){
+    .footer-all .footer-links, .footer-all .footer-center, .footer-all .vid{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-all .footer-center i {
+        margin-left: 0;
+
+    }
+}
